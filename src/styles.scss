@@ -1,0 +1,62 @@
+$color: #80868b;
+$active-color: #1a73e8;
+$error-color: #f44336;
+$input-value-color: #202124;
+$border-color: 1px solid #dadce0;
+
+$border-color-active: 2px solid $active-color;
+$default-background: #fff;
+
+/* Buttons */
+$btn-default-bg-color: #fff;
+$btn-default-bgh-color: #ddd;
+$btn-default-text-color: #333;
+
+$btn-primary-bg-color: #1a73e8;
+$btn-primary-bgh-color: #287ae6;
+$btn-primary-boxshadow-color: 0 1px 1px 0 rgba(66, 133, 244, 0.45),
+  0 1px 3px 1px rgba(66, 133, 244, 0.3);
+$btn-primary-text-color: #fff;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.input-label {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-1 {
+  box-sizing: border-box;
+  height: 50px;
+  width: 250px;
+  border-radius: 4px;
+  color: $input-value-color;
+  border: $border-color;
+  padding: 13px 15px;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+  }
+
+  &.warning {
+    outline: none;
+    border: 2px solid red;
+    border-radius: 4px;
+    outline: none;
+  }
+}
